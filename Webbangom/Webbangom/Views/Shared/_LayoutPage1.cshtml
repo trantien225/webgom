@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="icon" href="~/img/logotieude.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!---------------------------------------------------------------->
+    <link href="~/css/Style.css" rel="stylesheet" />
+    <link href="~/css/trangchu.css" rel="stylesheet" />
+    <link href="~/css/header.css" rel="stylesheet" />
+    <link href="~/css/footer.css" rel="stylesheet" />
+    <!---------------------------------------------------------------->
+    <script src="~/Scripts/jquery-3.6.1.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-nav group">
+        <section>
+            <div class="social-top-nav">
+                <a class="fa fa-facebook"></a>
+                <a class="fa fa-instagram"></a>
+                <a class="fa fa-google"></a>
+                <a class="fa fa-youtube"></a>
+            </div> <!-- End Social Topnav -->
+
+            <ul class="top-nav-quicklink flexContain">
+                <li><a href="~/Home/index"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a href="~/Main/index"><i class="fa fa-shopping-cart"></i> Cửa hàng</a></li>
+                <li><a href="tintuc.html"><i class="fa fa-newspaper-o"></i> Tin tức</a></li>
+                <li><a href="tuyendung.html"><i class="fa fa-handshake-o"></i> Tuyển dụng</a></li>
+                <li><a href="gioithieu.html"><i class="fa fa-info-circle"></i> Giới thiệu</a></li>
+                <li><a href="lienhe.html"><i class="fa fa-phone"></i> Liên hệ</a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="header group">
+
+        <div class="logo">
+            <a href="~/Home/index">
+                <img src="~/img/logo.png" alt="Trang chủ đồ gốm" title="Trang chủ đồ gốm">
+            </a>
+        </div> <!-- End Logo -->
+        <div class="conten">
+            <div class="search-header" style="position: relative; left: 180px; top: 20px">
+                <form class="input-search" method="get" action="index.html">
+                    <div class="autocomplete">
+                        <input id="search-box" name="search" autocomplete="off" type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                            Tìm kiếm
+                        </button>
+                    </div>
+                </form> <!-- End Form search -->
+            </div> <!-- End Search header -->
+
+            <div class="tools-member">
+                <div class="member">
+                    <a onclick="checkTaiKhoan()">
+                        <i class="fa fa-user"></i>
+                        <span>Tài khoản</span>
+                    </a>
+                </div> <!-- End Member -->
+
+                <div class="cart">
+                    <a>
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                        <span class="cart-number"></span>
+                    </a>
+                </div> <!-- End Cart -->
+                <div class="check-order">
+                    <a>
+                        <i class="fa fa-truck"></i>
+                        <span>Đơn hàng</span>
+                    </a>
+                </div>
+            </div><!-- End Tools Member -->
+        </div> <!-- End Content -->
+    </div> <!-- End Header -->
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row mb-5">
+                <p class="footer-site-logo" style="font-size:70px">Vẻ đẹp thực thụ của truyền thống và kỹ thuật thủ công Việt Nam </p>
+                <p class="footer-site-logo">
+                    Chúng tôi nỗ lực khai phá và mang vẻ đẹp thực sự của truyền thống thủ công Việt Nam ra thế giới bằng cách trao niềm tin
+                    chân thành và tuyệt đối vàođôi tay tinh tế của những nghệ nhân, để họ có thể thể hiện niềm đam mê sâu sắc nhất với vẻ đẹp thiên nhiên trong từng sản phẩm.
+                </p>
+                <p class="footer-site-logo">
+                    Thông qua việc bảo tồn các di sản lâu đời, kết hợp với những đổi mới trong thiết kế và ý tưởng, sứ mệnh của chúng tôi
+                    là làm sống lại và phát triển hơn nữa những nghề thủ công truyền thống đẹp nhất trên thế giới.
+                </p>
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="~/Views/Home/Index.cshtml"><img src="~/img/logo.png" /></a>
+                        <br />
+                        <p><small>Địa chỉ:140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</small></p>
+                        <a href="#"><i class="fa fa-phone"></i>:0978264932-0937351734</a>
+                        <br />
+                        <a href="#"><i class="fa fa-google"></i>:letrantien08082000@gmail.com</a>
+                        <br />
+                        <a style="font-family: 'Kolker Brush', cursive;" href="https://www.facebook.com/letrantien22052002"><i class="fa fa-facebook"></i>:FB Chủ Cửa Hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

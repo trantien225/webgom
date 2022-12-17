@@ -1,0 +1,65 @@
+﻿body{
+    background:#808080;
+}
+.footer {
+    margin-top: 10px;
+    padding: 0em 0;
+    background-image: url('../img/backgroundfooter.jpg');
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.container a {
+    color: #ccc;
+    transition: .2s ease;
+}
+
+.container a:hover {
+    color: #fff;
+}
+
+.footer .footer-site-logo {
+    font-family: 'Kolker Brush', cursive;
+    margin-top: 30px;
+    color: #ccc;
+    font-size: 45px;
+    font-weight: bold;
+    display: block;
+}
+
+.footer h3 {
+    margin-top: 50px;   
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer .links li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .links li a {
+    color: #999;
+    }
+
+.footer .links li a:hover {
+    color: #fff;
+    }
+
+.text-center {
+    color:#07fdee;
+    font-size: 20px;
+}
+.text-center :hover{
+    color:#ffc200;
+}
+

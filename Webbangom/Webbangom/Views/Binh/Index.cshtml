@@ -1,0 +1,22 @@
+﻿@model List<Webbangom.Models.Binh>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="row row-cols-3 row-cols-sm-6 g-4 p-3">
+    @foreach (var item in Model)
+    {
+        <div class="card" style="width: 18rem; text-align:center">
+            <img src="~/img/Binhgom/@item.img"height="200" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <h5 class="card-title">MASP:@item.MaSP</h5>
+                <p class="card-text">Giá Bán:@item.Gia  vnđ</p>
+                <a href="#" class="btn btn-primary">Thêm Vào Giỏ</a>
+            </div>
+        </div>
+
+    }
+
+</div>
